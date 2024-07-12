@@ -1,8 +1,15 @@
-# import pyttsx3
-# engine = pyttsx3.init()
-# engine.say("Hey Annu What are you doing?")
-# engine.runAndWait()
+#Usage of pyttsx3 module
+import pyttsx3
+engine = pyttsx3.init()
+engine.say("I will speak this text")
+engine.runAndWait()
 
+# Single line usage with speak function with default options
+import pyttsx3
+pyttsx3.speak("I will speak this text")
+
+
+# Changing Voice , Rate and Volume :
 import pyttsx3
 engine = pyttsx3.init() # object creation
 
@@ -10,7 +17,6 @@ engine = pyttsx3.init() # object creation
 rate = engine.getProperty('rate')   # getting details of current speaking rate
 print (rate)                        #printing current voice rate
 engine.setProperty('rate', 125)     # setting up new voice rate
-
 
 """VOLUME"""
 volume = engine.getProperty('volume')   #getting to know current volume level (min=0 and max=1)
@@ -22,12 +28,14 @@ voices = engine.getProperty('voices')       #getting details of current voice
 #engine.setProperty('voice', voices[0].id)  #changing index, changes voices. 0 for male
 engine.setProperty('voice', voices[1].id)   #changing index, changes voices. 1 for female
 
-engine.say("Hello Annu!")
+engine.say("Hello World!")
 engine.say('My current speaking rate is ' + str(rate))
+engine.say('My current volume is ' + str(volume))
+
 engine.runAndWait()
 engine.stop()
 
 """Saving Voice to a file"""
 # On linux make sure that 'espeak' and 'ffmpeg' are installed
-engine.save_to_file('Hello Annu', 'test.mp3')
+engine.save_to_file('Hello World', 'test.mp3')
 engine.runAndWait()

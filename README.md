@@ -15,8 +15,8 @@ Here are some important built-in Python modules
 
    <br/>
 # Contact
-- If you have any questions or suggestions, feel free to open an issue or contact the maintainer:
+If you have any questions or suggestions, feel free to open an issue or contact the maintainer:
 
-Your Annu
-Email: anuk35168@gmail.com
-GitHub: annuk123
+- Your Annu
+- Email: anuk35168@gmail.com
+- GitHub: annuk123
